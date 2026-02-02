@@ -114,7 +114,7 @@ def prepare_datasets(cfg: Any, seed: int) -> Dict[str, Any]:
     cache_dir = cfg.cache_dir
     sst2 = load_dataset("glue", "sst2", cache_dir=cache_dir)
     yelp = load_dataset("yelp_polarity", cache_dir=cache_dir)
-    imdb = load_dataset("imdb", cache_dir=cache_dir)
+    imdb = load_dataset("stanfordnlp/imdb", cache_dir=cache_dir)
 
     splits = cfg.dataset.splits
     opt_size = int(splits.opt_size)
