@@ -1,0 +1,29 @@
+defaults:
+  - _self_
+  - runs@_global_: ${run}
+
+mode: full
+run: ???
+results_dir: "."
+cache_dir: ".cache/"
+seeds: [0, 1, 2, 3, 4]
+
+prompt:
+  base: "Rewrite the text to the opposite sentiment while preserving meaning, entities, and topic. Write fluent English."
+
+models:
+  rewriter_name: "google/flan-t5-small"
+  sentiment_name: "distilbert-base-uncased-finetuned-sst-2-english"
+  similarity_name: "sentence-transformers/all-MiniLM-L6-v2"
+  fluency_name: "gpt2"
+
+wandb:
+  entity: airas
+  project: 2026-02-02-2
+  mode: online
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: .

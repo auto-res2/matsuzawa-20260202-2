@@ -1,0 +1,50 @@
+run_id: comparative-1-flan-t5-small-imdb
+method: "AV-DR-SPO (Bonferroni e-value gating, fixed slices)"
+model:
+  name: "google/flan-t5-small"
+  role: "rewriter"
+  max_new_tokens: 80
+dataset:
+  name: "imdb"
+  text_field: "text"
+  label_field: "label"
+  preprocessing:
+    max_length: 256
+    lowercase: false
+  splits:
+    opt_size: 120
+    audit_total: 200
+    audit_disc: 100
+    audit_conf: 100
+    eval_size: 300
+training:
+  learning_rate: 5.0e-5
+  batch_size: 16
+  epochs: 1
+  optimizer: "adamw"
+  warmup_steps: 0
+  prompt_optimization:
+    iterations: 3
+    candidates_per_iter: 4
+    alpha: 0.1
+    tau_similarity: 0.75
+    ppl_max: 80.0
+    delta_noninferiority: 0.01
+    num_slices_tested: 20
+    alpha_max_spend: 0.02
+    reward_frac: 0.5
+    slice_min_support: 12
+    gatekeeping: "bonferroni"
+    bonferroni_family: "slices_only"
+    discovery_size: 100
+    confirmation_size: 100
+optuna:
+  n_trials: 20
+  search_spaces:
+    - param_name: "num_slices_tested"
+      distribution_type: "int"
+      low: 5
+      high: 40
+    - param_name: "bonferroni_family"
+      distribution_type: "categorical"
+      choices: ["slices_only", "candidates_x_slices"]
