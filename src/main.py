@@ -64,6 +64,9 @@ def main(cfg: Any) -> None:
     if cfg.run is None or str(cfg.run) == "???":
         raise ValueError("Missing run id. Provide run=<run_id>.")
     
+    # Disable struct mode before merging to allow new keys
+    OmegaConf.set_struct(cfg, False)
+    
     # Load run-specific config and merge it
     from pathlib import Path
     run_config_path = Path(__file__).parent.parent / "config" / "runs" / f"{cfg.run}.yaml"
