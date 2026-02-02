@@ -431,6 +431,14 @@ def run_optuna(cfg: Any, evaluator: model_lib.ConstrainedEvaluator) -> Dict[str,
 def main(cfg: Any) -> None:
     if cfg.run is None or str(cfg.run) == "???":
         raise ValueError("Missing run id. Provide run=<run_id>.")
+    
+    # Load run-specific config and merge it
+    from pathlib import Path as PathLib
+    run_config_path = PathLib(__file__).parent.parent / "config" / "runs" / f"{cfg.run}.yaml"
+    if run_config_path.exists():
+        run_cfg = OmegaConf.load(run_config_path)
+        cfg = OmegaConf.merge(cfg, run_cfg)
+    
     cfg = apply_mode_overrides(cfg)
     set_cache_env(cfg.cache_dir)
     Path(cfg.results_dir).mkdir(parents=True, exist_ok=True)

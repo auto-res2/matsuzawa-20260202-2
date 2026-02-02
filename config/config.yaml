@@ -1,6 +1,5 @@
 defaults:
   - _self_
-  - runs@_global_: ${run}
 
 mode: full
 run: ???
