@@ -3,6 +3,8 @@ defaults:
 
 mode: full
 run: ???
+run_id: ???
+method: ???
 results_dir: "."
 cache_dir: ".cache/"
 seeds: [0, 1, 2, 3, 4]
@@ -16,10 +18,53 @@ models:
   similarity_name: "sentence-transformers/all-MiniLM-L6-v2"
   fluency_name: "gpt2"
 
+model:
+  name: ???
+  role: ???
+
+dataset:
+  name: ???
+  text_field: "text"
+  label_field: "label"
+  preprocessing:
+    max_length: 256
+    lowercase: false
+  splits:
+    opt_size: 120
+    audit_total: 200
+    audit_disc: 100
+    audit_conf: 100
+    eval_size: 300
+
+training:
+  learning_rate: 5.0e-5
+  batch_size: 16
+  epochs: 1
+  optimizer: "adamw"
+  warmup_steps: 0
+  max_batches: null
+  max_eval_batches: null
+  prompt_optimization:
+    iterations: 3
+    candidates_per_iter: 4
+    alpha: 0.1
+    tau_similarity: 0.75
+    ppl_max: 80.0
+    delta_noninferiority: 0.01
+    alpha_max_spend: 0.02
+    reward_frac: 0.5
+    slice_min_support: 12
+    discovery_size: 100
+    confirmation_size: 100
+
 wandb:
   entity: airas
   project: 2026-02-02-2
   mode: online
+
+optuna:
+  n_trials: 0
+  search_spaces: []
 
 hydra:
   job:
