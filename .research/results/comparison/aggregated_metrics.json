@@ -1,0 +1,296 @@
+{
+  "primary_metric": "accuracy",
+  "metrics": {
+    "_runtime": {
+      "comparative-1-distilbert-sst2-imdb": 2940.440448292,
+      "comparative-1-flan-t5-small-imdb": 3041.282063936,
+      "proposed-distilbert-sst2-imdb": 3069.187738174,
+      "proposed-flan-t5-small-imdb": 2951.829768578
+    },
+    "_step": {
+      "comparative-1-distilbert-sst2-imdb": 44.0,
+      "comparative-1-flan-t5-small-imdb": 44.0,
+      "proposed-distilbert-sst2-imdb": 44.0,
+      "proposed-flan-t5-small-imdb": 44.0
+    },
+    "_timestamp": {
+      "comparative-1-distilbert-sst2-imdb": 1770057585.1035702,
+      "comparative-1-flan-t5-small-imdb": 1770057783.4607513,
+      "proposed-distilbert-sst2-imdb": 1770057825.7156346,
+      "proposed-flan-t5-small-imdb": 1770057770.3601856
+    },
+    "aux/epoch": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "aux/train_loss": {
+      "comparative-1-distilbert-sst2-imdb": 0.6943570375442505,
+      "comparative-1-flan-t5-small-imdb": 0.6943570375442505,
+      "proposed-distilbert-sst2-imdb": 0.6943570375442505,
+      "proposed-flan-t5-small-imdb": 0.6943570375442505
+    },
+    "best_epoch": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "confusion/imdb_fn": {
+      "comparative-1-distilbert-sst2-imdb": 774.0,
+      "comparative-1-flan-t5-small-imdb": 774.0,
+      "proposed-distilbert-sst2-imdb": 774.0,
+      "proposed-flan-t5-small-imdb": 774.0
+    },
+    "confusion/imdb_fp": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "confusion/imdb_tn": {
+      "comparative-1-distilbert-sst2-imdb": 726.0,
+      "comparative-1-flan-t5-small-imdb": 726.0,
+      "proposed-distilbert-sst2-imdb": 726.0,
+      "proposed-flan-t5-small-imdb": 726.0
+    },
+    "confusion/imdb_tp": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "confusion/sst2_fn": {
+      "comparative-1-distilbert-sst2-imdb": 728.0,
+      "comparative-1-flan-t5-small-imdb": 728.0,
+      "proposed-distilbert-sst2-imdb": 728.0,
+      "proposed-flan-t5-small-imdb": 728.0
+    },
+    "confusion/sst2_fp": {
+      "comparative-1-distilbert-sst2-imdb": 7.0,
+      "comparative-1-flan-t5-small-imdb": 7.0,
+      "proposed-distilbert-sst2-imdb": 7.0,
+      "proposed-flan-t5-small-imdb": 7.0
+    },
+    "confusion/sst2_tn": {
+      "comparative-1-distilbert-sst2-imdb": 758.0,
+      "comparative-1-flan-t5-small-imdb": 758.0,
+      "proposed-distilbert-sst2-imdb": 758.0,
+      "proposed-flan-t5-small-imdb": 758.0
+    },
+    "confusion/sst2_tp": {
+      "comparative-1-distilbert-sst2-imdb": 7.0,
+      "comparative-1-flan-t5-small-imdb": 7.0,
+      "proposed-distilbert-sst2-imdb": 7.0,
+      "proposed-flan-t5-small-imdb": 7.0
+    },
+    "confusion/yelp_fn": {
+      "comparative-1-distilbert-sst2-imdb": 732.0,
+      "comparative-1-flan-t5-small-imdb": 732.0,
+      "proposed-distilbert-sst2-imdb": 732.0,
+      "proposed-flan-t5-small-imdb": 732.0
+    },
+    "confusion/yelp_fp": {
+      "comparative-1-distilbert-sst2-imdb": 1.0,
+      "comparative-1-flan-t5-small-imdb": 1.0,
+      "proposed-distilbert-sst2-imdb": 1.0,
+      "proposed-flan-t5-small-imdb": 1.0
+    },
+    "confusion/yelp_tn": {
+      "comparative-1-distilbert-sst2-imdb": 766.0,
+      "comparative-1-flan-t5-small-imdb": 766.0,
+      "proposed-distilbert-sst2-imdb": 766.0,
+      "proposed-flan-t5-small-imdb": 766.0
+    },
+    "confusion/yelp_tp": {
+      "comparative-1-distilbert-sst2-imdb": 1.0,
+      "comparative-1-flan-t5-small-imdb": 1.0,
+      "proposed-distilbert-sst2-imdb": 1.0,
+      "proposed-flan-t5-small-imdb": 1.0
+    },
+    "eval/base_imdb_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/base_sst2_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/base_yelp_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/imdb_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/imdb_accuracy_best": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/imdb_accuracy_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/imdb_accuracy_std": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/ood_regression": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/ood_regression_rate": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/robust_constrained_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/robust_constrained_accuracy_best": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/robust_constrained_accuracy_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/robust_constrained_accuracy_std": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/sst2_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/sst2_accuracy_best": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/sst2_accuracy_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/sst2_accuracy_std": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/worst_slice_constrained_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/worst_slice_constrained_accuracy_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/worst_slice_constrained_accuracy_std": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/yelp_accuracy": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/yelp_accuracy_best": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/yelp_accuracy_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "eval/yelp_accuracy_std": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "seed": {
+      "comparative-1-distilbert-sst2-imdb": 4.0,
+      "comparative-1-flan-t5-small-imdb": 4.0,
+      "proposed-distilbert-sst2-imdb": 4.0,
+      "proposed-flan-t5-small-imdb": 4.0
+    },
+    "train/accepted_steps": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "train/accepted_steps_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "train/candidates_evaluated": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    },
+    "train/candidates_evaluated_mean": {
+      "comparative-1-distilbert-sst2-imdb": 0.0,
+      "comparative-1-flan-t5-small-imdb": 0.0,
+      "proposed-distilbert-sst2-imdb": 0.0,
+      "proposed-flan-t5-small-imdb": 0.0
+    }
+  },
+  "best_proposed": {
+    "run_id": "proposed-distilbert-sst2-imdb",
+    "value": 0.0
+  },
+  "best_baseline": {
+    "run_id": "comparative-1-distilbert-sst2-imdb",
+    "value": 0.0
+  },
+  "gap": NaN
+}
