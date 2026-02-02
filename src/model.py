@@ -119,7 +119,6 @@ class PromptRewriter:
                 temperature=temperature,
                 num_beams=1,
                 pad_token_id=self.tokenizer.pad_token_id,
-                generator=generator,
             )
         decoded = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)[0].strip()
         if not self.is_encoder_decoder and decoded.startswith(input_text):
@@ -145,7 +144,6 @@ class PromptRewriter:
                 num_return_sequences=k,
                 num_beams=1,
                 pad_token_id=self.tokenizer.pad_token_id,
-                generator=generator,
             )
         decoded = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
         cleaned = []
